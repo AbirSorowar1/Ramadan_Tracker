@@ -63,7 +63,7 @@ export default function DuaReminder({ user }) {
                     onChange={(e) => setNewDua(e.target.value)}
                     placeholder="Write your dua here... (for forgiveness, protection, Jannah, etc.)"
                     autoSize={{ minRows: 4, maxRows: 6 }}
-                    className="bg-black border border-red-600 text-white text-lg p-5 rounded-xl focus:border-red-500 focus:ring-2 focus:ring-red-500/30 placeholder:text-gray-400"
+                    className="bg-black border-2 border-red-600 text-white text-lg p-5 rounded-xl focus:border-red-500 focus:ring-2 focus:ring-red-500/40 placeholder:text-gray-400 placeholder:opacity-100"
                 />
                 <Button
                     type="primary"
@@ -119,18 +119,17 @@ export default function DuaReminder({ user }) {
 
             {/* Edit Modal */}
             <Modal
+                title={<span className="text-white text-2xl font-semibold">Edit Dua</span>}
                 open={!!editing}
                 onCancel={() => setEditing(null)}
                 footer={null}
-                title={<span className="text-white text-2xl font-semibold">Edit Dua</span>}
-                bodyStyle={{ backgroundColor: '#000000', color: '#ffffff' }}
-                style={{ top: 20 }}
+                bodyStyle={{ backgroundColor: '#000000', color: '#ffffff', padding: '24px' }}
             >
                 <TextArea
                     value={editText}
                     onChange={(e) => setEditText(e.target.value)}
                     autoSize={{ minRows: 5, maxRows: 10 }}
-                    className="bg-black border border-red-600 text-white text-lg p-5 rounded-xl mb-6 focus:border-red-500 placeholder:text-gray-400"
+                    className="bg-black border-2 border-red-600 text-white text-lg p-5 rounded-xl mb-6 focus:border-red-500 placeholder:text-gray-400 placeholder:opacity-100"
                 />
                 <div className="flex justify-end gap-4">
                     <Button
