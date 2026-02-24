@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.ant-layout,
+.ant-layout-sider,
+.ant-drawer,
+.ant-modal {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.ant-card,
+.ant-modal-content {
+    background: #000000 !important;
+    border: none !important;
+    box-shadow: 0 10px 30px rgba(239, 68, 68, 0.06) !important;
+}
+
+.ant-menu-dark {
+    background: transparent !important;
+}
+
+.ant-menu-item,
+.ant-menu-submenu-title {
+    color: #e5e5e5 !important;
+}
+
+.ant-menu-item-selected,
+.ant-menu-item:hover {
+    background: rgba(239, 68, 68, 0.12) !important;
+    color: #ef4444 !important;
+}
+
+.ant-btn-primary,
+.ant-btn-danger {
+    border: none !important;
+}
+
+.ant-btn-primary {
+    background: #b91c1c !important;
+    /* deep red */
+}
+
+.ant-btn-danger {
+    background: #7f1d1d !important;
+}
+
+.ant-divider-horizontal {
+    border-color: rgba(239, 68, 68, 0.15) !important;
+}
